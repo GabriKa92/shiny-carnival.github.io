@@ -26,7 +26,25 @@
         </ul>
     </nav>
         <a class="button" href="#">Войти</a>
-    </header>  
+    </header>
+          <div class="inter">
+                    <h3 class="inter_text">Войти на сайт</h3>
+                    <form action="#">
+                        <input class="inp1" type="text" placeholder="Логин"> <br>
+                        
+                        <input class="inp2" type="password" placeholder="Пароль">
+                        <button class="button_inter" tupe="sumbit">Войти</button>
+                </form>
+                </div>
+                <script>
+               
+                    const aEl = document.querySelector('.button');
+                    const interEl = document.querySelector('.inter');
+                
+                    aEl.addEventListener('click', function (e) {
+                        interEl.classList.toggle('visible');
+                    });
+                </script>   
     <main class="content-students">
         <h2 class="subtitle-students"> Студенты потока 08.02.2020 👧👦 </h2>
         <div class="students">
@@ -51,24 +69,7 @@
                 <img width="200" height="270" src="img/student.jpg" alt="студент1">
                 <p class="student_name">Василий Иванов</p>
                 </div> 
-                <div class="inter">
-                    <h3 class="inter_text">Войти на сайт</h3>
-                    <form action="#">
-                        <input class="inp1" type="text" placeholder="Логин"> <br>
-                        
-                        <input class="inp2" type="password" placeholder="Пароль">
-                        <button class="button_inter" tupe="sumbit">Войти</button>
-                </form>
-                </div>
-                <script>
-               
-                    const aEl = document.querySelector('.button');
-                    const interEl = document.querySelector('.inter');
-                
-                    aEl.addEventListener('click', function (e) {
-                        interEl.classList.toggle('visible');
-                    });
-                </script>                     
+                                
         </div>
        </main> 
 <footer class="footer">
