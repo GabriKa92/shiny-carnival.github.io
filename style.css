@@ -238,7 +238,6 @@ img {
     display: none;
 }
 .inter {
-    z-index: 1000;
     position: absolute;
     margin-top: 80px;
     height: 418px;
