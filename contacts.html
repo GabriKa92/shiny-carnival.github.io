@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.svg" type="image/svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,12 +19,25 @@
         <header class="header">
             <a class="logo" href="index.html"> <img src="img/logo.svg" alt="logo"></a>
             <nav>
+                <div class="burger">
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                  </div>
                 <ul class="menu">
                     <li class="menu_list"><a class="menu_link " href="index.html"> Главная</a></li>
                     <li class="menu_list"><a class="menu_link" href="students.html"> Студенты</a></li>
                     <li class="menu_list"><a class="menu_link" href="about.html"> О курсе</a></li>
                     <li class="menu_list"><a class="menu_link menu_link_active" href="contacts.html"> Контакты</a></li>
                 </ul>
+                <script>
+                    const burgerEl = document.querySelector('.burger');
+        const menuEl = document.querySelector('.menu');
+        
+        burgerEl.addEventListener('click', function () {
+          menuEl.classList.toggle('menu_show');
+        });
+                </script>
             </nav>
             <a class="button" href="#">Войти</a>
         </header>

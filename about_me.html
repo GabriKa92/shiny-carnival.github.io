@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="me">
+        <header class="header">
+            <a class="logo" href="index.html"> <img src="img/logo.svg" alt="logo"></a>
+            <nav>
+                <div class="burger">
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                  </div>
+                <ul class="menu">
+                    <li class="menu_list"><a class="menu_link" href="index.html"> Главная</a></li>
+                    <li class="menu_list"><a class="menu_link" href="students.html"> Студенты</a></li>
+                    <li class="menu_list"><a class="menu_link" href="about.html"> О курсе</a></li>
+                    <li class="menu_list"><a class="menu_link" href="contacts.html"> Контакты</a></li>
+                </ul>
+                <script>
+                    const burgerEl = document.querySelector('.burger');
+        const menuEl = document.querySelector('.menu');
+        
+        burgerEl.addEventListener('click', function () {
+          menuEl.classList.toggle('menu_show');
+        });
+                </script>
+            </nav>
+            <a class="button" href="#">Войти</a>
+        </header>
+        <div class="inter">
+            <h3 class="inter_text">Войти на сайт</h3>
+            <form action="#">
+                <input class="inp1" type="text" placeholder="Логин"> <br>
+                
+                <input class="inp2" type="password" placeholder="Пароль">
+                <button class="button_inter" tupe="sumbit">Войти</button>
+        </form>
+        </div>
+        <script>
+       
+            const aEl = document.querySelector('.button');
+            const interEl = document.querySelector('.inter');
+        
+            aEl.addEventListener('click', function (e) {
+                interEl.classList.toggle('visible');
+            });
+        </script>
+        <main class="about_me">
+            <div class="info_me">
+                <div class="text_me">
+            <h1 class="title"> Привет! Меня зовут Александра! </h1>
+            <h3 class="subtitle">Добро пожаловать на мою страницу!</h3>
+            <p class="about_text">Я расскажу о самых красивых горных пейзажах, которые я видела. </p>
+        </div>
+            <img class="icon" src="img/Group.png" alt="иконка">
+        </div>
+            <div class="my_photo">
+                <div class="photo">
+                    <p class="photo_name">Горные вершины Сочи</p>
+                <img width="201" height="315" src="img/Group1.jpg" alt="фото1">
+                
+                </div>
+                <div class="photo">
+                    <p class="photo_name">Горные реки Абхазии</p>
+                    <img width="201" height="315" src="img/Group2.jpg" alt="фото2">
+                    </div>
+                        <div class="photo">
+                            <p class="photo_name">Удивительная Пханг Нга</p>
+                            <img width="201" height="315" src="img/Group3.jpg" alt="фото3">
+                            </div>
+                                </div> 
+                                <h3 class="text_form">Чтобы узнать подробнее об этих местах - оставьте свои контактные данные.</h3>
+                                
+                                <h4>Выберите направление</h4>
+                                <form action="#">
+                                  <table>
+                                    <tr>
+                                        <td><input type="checkbox" name="art" id="art" checked></td>
+                                        <td><label for="art">Сочи</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="music" id="music"></td>
+                                        <td><label for="music">Абхазия</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="dance" id="dance"></td>
+                                        <td><label for="dance">Пханг Нга</label></td>
+                                    </tr>
+                                  </table>  
+                                    <input class="inp3" type="text" placeholder="Сообщение">
+                                    <input class="inp3" type="email" placeholder="email" >
+                                    <input class="inp3" type="tel" placeholder="Номер телефона">
+
+                                    <button class="button_me" type="submit">Отправить</button>
+                                    <button class="button_me" type="reset">Удалить</button>
+                                </form>   
+
+        </main>
+    
+    
+    <footer class="footer">
+        <p>2023 &copy; <a class="footer__text" href="#">учебный центр</a></p>
+    </footer> 
+</div>
+</body>
+</html>
