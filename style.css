@@ -644,15 +644,22 @@ img {
     }
 
     .about_me {
-        padding-left: calc(50% - 465px / 2);
-        padding-right: calc(50% - 465px / 2);
+        padding-left: calc(50% - 500px / 2);
+        padding-right: calc(50% - 500px / 2);    
     }
-
+    
+.info_me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
     .icon {
         padding-top: 13px;
     }
 
     .my_photo {
-        gap: 30px;
+        display: flex;
+        justify-content: center;        
     }
 }
