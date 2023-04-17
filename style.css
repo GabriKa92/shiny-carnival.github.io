@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 body {
     min-height: 100vh;
     display: flex;
@@ -55,6 +56,11 @@ img {
     background-color: #FFFFFF;
     text-decoration: none;
 }
+.menu_link:hover {
+    background: white; 
+    color: #213B7E;
+}
+
 
 .button {
     width: 153px;
@@ -69,10 +75,12 @@ img {
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: all 0.3s;
 }
 
 .button:hover {
-    background: #fa5711;
+    color: black;
+    background-color: #FFFFFF;
 }
 
 @-webkit-keyframes rotate-in-ver {
@@ -105,9 +113,14 @@ img {
 
 .logo {
 
-    -webkit-animation: rotate-in-ver 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: rotate-in-ver 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: rotate-in-ver 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-in-ver 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+.logo:hover {
+    filter: brightness(90%)
+}
+
 
 
 
@@ -201,22 +214,7 @@ img {
     width: 100%;
 }
 
-.footer {
-    background: #213B7E;
-    padding-top: 18px;
-    padding-bottom: 19px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: rgba(255, 255, 255, 0.5);
-    margin-top: 187px;
-}
 
-.footer__text {
-    color: rgba(255, 255, 255, 0.5);
-}
 
 .link {
     font-style: normal;
@@ -287,7 +285,7 @@ img {
 
 .me {
     background: url(img/mountains.jpg);
-    max-width: 100%;
+    background-size: cover;
 }
 
 .about_me {
@@ -419,10 +417,14 @@ img {
     line-height: 21px;
     color: #FFFFFF;
     border: none;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
+
 .button_inter:hover {
-    background: #fa5711;
+    color: white;
+    background-color: #213B7E;
 }
 
 .visible {
@@ -464,7 +466,41 @@ img {
     display: flex;
     align-items: center;
 }
+.form_me {
+   padding-bottom: 100px;
+}
+.footer {
+    background: #213B7E;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 187px;
+}
 
+.footer_me {
+    background: #213B7E;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);  
+}
+
+.footer__text {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__text:hover {
+    color: #FFFFFF;
+}
 
 
 @media (max-width: 1024px) {
@@ -653,6 +689,7 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    
 }
     .icon {
         padding-top: 13px;
